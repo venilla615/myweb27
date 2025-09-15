@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Factorial calculator</title>
+</head>
+<body>
+<h2>Factorial calculator</h2>
+<input type="number" id="number_input" Placeholder="Enter a number">
+<button onclick="calfactorial()">Calculator</button>
+<p id="result"></p>
+<script>
+function factorial(n)
+{
+if(num===0||num===1)
+return 1;
+return n*factorial(n);
+}
+function calfactorial()
+{
+conts input=document.getElementById(number_input).value;
+conts num=ParseInt("input");
+if(isNaN(num)||num<0)
+document.getElementById("result").innerText="Please Enter the non_negative number";
+return;
+const result=factorial(num);
+document.getElementById("result").innerText="Factorial of ${num} is ${result}";
+</script>
+</body>
+</head>
